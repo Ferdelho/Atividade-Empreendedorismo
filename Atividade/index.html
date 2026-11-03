@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AcessoTeste — Seus sistemas testados por quem realmente os usa</title>
+  <meta name="description" content="Plataforma B2B onde pessoas com deficiência testam os sistemas internos da sua empresa e geram relatórios de acessibilidade, recebendo por cada teste.">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site">
+    <div class="container nav">
+      <a href="#" class="logo" aria-label="AcessoTeste — página inicial">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>
+        </span>
+        AcessoTeste
+      </a>
+
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <nav aria-label="Principal">
+        <ul id="menu">
+          <li><a href="#problema">O problema</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#demo">Experimente</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#contato" class="btn btn-primary">Quero testar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div>
+          <span class="eyebrow">Plataforma B2B de acessibilidade</span>
+          <h1 id="hero-title">Seu sistema testado por quem <span>realmente precisa</span> dele.</h1>
+          <p class="lead">Pessoas com deficiência testam o ERP, o chat e o sistema de ponto da sua empresa — e entregam um relatório claro de onde estão as barreiras. Elas são pagas por cada teste.</p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Solicitar um teste</a>
+            <a href="#demo" class="btn btn-ghost">Experimentar um teste</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>4</strong><span>perfis de deficiência</span></div>
+            <div><strong>100%</strong><span>testes com pessoas reais</span></div>
+            <div><strong>PDF</strong><span>relatório pronto para agir</span></div>
+          </div>
+        </div>
+
+        <!-- Mock do relatório -->
+        <div class="mock" role="img" aria-label="Exemplo de relatório de acessibilidade. Aprovado: login só com teclado, contraste adequado, ordem de foco lógica. Reprovado: botão Finalizar sem rótulo para leitor de tela, tabela de notas fiscais sem cabeçalhos.">
+          <div class="mock-head">
+            <b>Relatório de Acessibilidade</b>
+            <span class="tag">Leitor de tela · NVDA</span>
+          </div>
+          <div class="check"><span class="dot ok">✓</span> Login realizado apenas com teclado</div>
+          <div class="check"><span class="dot fail">✕</span> Botão “Finalizar” sem rótulo para leitor de tela</div>
+          <div class="check"><span class="dot ok">✓</span> Contraste adequado nos formulários</div>
+          <div class="check"><span class="dot fail">✕</span> Tabela de notas fiscais sem cabeçalhos</div>
+          <div class="check"><span class="dot ok">✓</span> Ordem de foco lógica</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEMA ===== -->
+    <section id="problema" aria-labelledby="problema-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">O problema</span>
+          <h2 id="problema-title">Contratar não basta. O sistema também precisa estar pronto.</h2>
+          <p>Muitas empresas querem incluir e cumprir cotas, mas descobrem no primeiro dia de trabalho que as ferramentas internas não funcionam para todos.</p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🔒</div>
+            <h3>Sistemas inacessíveis</h3>
+            <p>ERPs e softwares legados que não funcionam com leitores de tela, impedindo o trabalho de quem é cego.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🖱️</div>
+            <h3>Dependência do mouse</h3>
+            <p>Fluxos que exigem cliques complexos excluem pessoas com limitação motora que navegam só pelo teclado ou voz.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🧩</div>
+            <h3>Interfaces confusas</h3>
+            <p>Excesso de estímulos e termos obscuros afetam pessoas com TDAH, dislexia e autismo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section id="como-funciona" class="profiles" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Como funciona</span>
+          <h2 id="como-title">Do link ao relatório em quatro passos.</h2>
+          <p>Um fluxo simples para a empresa e uma oportunidade de renda para o testador.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <h3>Envie o link</h3>
+            <p>Cadastre o endereço do sistema (ou de um ambiente de homologação) e escolha o perfil de teste.</p>
+          </li>
+          <li class="step">
+            <h3>Distribuímos</h3>
+            <p>O teste vira um micro-trabalho e é oferecido a testadores PCD cadastrados.</p>
+          </li>
+          <li class="step">
+            <h3>Eles testam</h3>
+            <p>Seguindo um roteiro guiado, o testador navega pelo sistema e responde ao checklist.</p>
+          </li>
+          <li class="step">
+            <h3>Você recebe</h3>
+            <p>Relatório de acessibilidade compilado, apontando exatamente onde o sistema falhou.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PERFIS ===== -->
+    <section id="perfis" aria-labelledby="perfis-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Perfis de teste</span>
+          <h2 id="perfis-title">Cada barreira exige um olhar diferente.</h2>
+          <p>Focamos nas deficiências que mais enfrentam obstáculos em interfaces digitais.</p>
+        </div>
+
+        <div class="profile-grid">
+          <article class="profile">
+            <div class="icon" aria-hidden="true">👁️</div>
+            <h3>Visual</h3>
+            <p>Cegueira e baixa visão.</p>
+            <small>Leitores de tela, contraste, zoom</small>
+          </article>
+          <article class="profile">
+            <div class="icon" aria-hidden="true">⌨️</div>
+            <h3>Motora</h3>
+            <p>Limitações de movimento.</p>
+            <small>Teclado 100%, comandos de voz</small>
+          </article>
+          <article class="profile">
+            <div class="icon" aria-hidden="true">🔔</div>
+            <h3>Auditiva</h3>
+            <p>Surdez e perda auditiva.</p>
+            <small>Legendas, avisos visuais, Libras</small>
+          </article>
+          <article class="profile">
+            <div class="icon" aria-hidden="true">💡</div>
+            <h3>Cognitiva</h3>
+            <p>TDAH, dislexia, autismo.</p>
+            <small>Clareza, simplicidade, menos estímulos</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEMO DO TESTE ===== -->
+    <section id="demo" class="profiles" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Experimente</span>
+          <h2 id="demo-title">Faça um teste de demonstração.</h2>
+          <p>É assim que o testador responde ao roteiro guiado. Tudo funciona só com o teclado (Tab para avançar, setas ou espaço para escolher) e com leitor de tela.</p>
+        </div>
+
+        <form id="demo-form" class="demo" novalidate aria-labelledby="demo-title">
+          <p class="demo-context">Sistema testado: <strong>Portal de lançamento de notas fiscais</strong> (exemplo) · Perfil: <strong>teclado e leitor de tela</strong></p>
+
+          <div id="demo-errors" class="form-errors" role="alert" tabindex="-1" hidden></div>
+
+          <fieldset class="question" id="q1" data-issue="O login não pôde ser concluído usando apenas o teclado.">
+            <legend>1. Conseguiu fazer login usando apenas o teclado?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="q1" value="sim"> Sim</label>
+              <label class="choice"><input type="radio" name="q1" value="nao"> Não</label>
+              <label class="choice"><input type="radio" name="q1" value="na"> Não se aplica</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question" id="q2" data-issue="O leitor de tela não anunciou o botão de finalizar (falta rótulo acessível).">
+            <legend>2. O leitor de tela leu o botão de finalizar?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="q2" value="sim"> Sim</label>
+              <label class="choice"><input type="radio" name="q2" value="nao"> Não</label>
+              <label class="choice"><input type="radio" name="q2" value="na"> Não se aplica</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question" id="q3" data-issue="A ordem de foco ao usar a tecla Tab não segue a ordem visual da página.">
+            <legend>3. A ordem do foco ao apertar Tab é lógica?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="q3" value="sim"> Sim</label>
+              <label class="choice"><input type="radio" name="q3" value="nao"> Não</label>
+              <label class="choice"><input type="radio" name="q3" value="na"> Não se aplica</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question" id="q4" data-issue="Há campos de formulário sem rótulo claro ou sem instrução de preenchimento.">
+            <legend>4. Os campos do formulário têm rótulos claros?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="q4" value="sim"> Sim</label>
+              <label class="choice"><input type="radio" name="q4" value="nao"> Não</label>
+              <label class="choice"><input type="radio" name="q4" value="na"> Não se aplica</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question" id="q5" data-issue="Os erros são avisados só por som ou só por cor, sem mensagem de texto.">
+            <legend>5. Quando ocorre um erro, há aviso em texto (não só som ou cor)?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="q5" value="sim"> Sim</label>
+              <label class="choice"><input type="radio" name="q5" value="nao"> Não</label>
+              <label class="choice"><input type="radio" name="q5" value="na"> Não se aplica</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question" id="q6" data-issue="A linguagem ou o excesso de informação na tela dificulta a compreensão.">
+            <legend>6. A tela é clara, sem excesso de informação ou termos confusos?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="q6" value="sim"> Sim</label>
+              <label class="choice"><input type="radio" name="q6" value="nao"> Não</label>
+              <label class="choice"><input type="radio" name="q6" value="na"> Não se aplica</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="observacoes">Observações do testador (opcional)</label>
+            <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+          </div>
+
+          <div class="report-actions">
+            <button type="submit" class="btn btn-primary">Gerar relatório</button>
+            <button type="reset" class="btn btn-ghost">Limpar respostas</button>
+          </div>
+        </form>
+
+        <!-- Relatório gerado -->
+        <section id="relatorio" class="report" aria-labelledby="relatorio-titulo" tabindex="-1" hidden>
+          <h3 id="relatorio-titulo">Relatório de Acessibilidade — demonstração</h3>
+          <p id="relatorio-data"></p>
+          <p id="relatorio-resumo" class="score"></p>
+
+          <h4>Pontos a corrigir</h4>
+          <ul id="relatorio-falhas"></ul>
+
+          <h4>Itens aprovados</h4>
+          <ul id="relatorio-ok"></ul>
+
+          <h4>Observações</h4>
+          <p id="relatorio-obs"></p>
+
+          <div class="report-actions">
+            <button type="button" id="relatorio-imprimir" class="btn btn-primary">Salvar como PDF</button>
+            <button type="button" id="relatorio-refazer" class="btn btn-ghost">Refazer teste</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===== PREÇOS ===== -->
+    <section id="precos" aria-labelledby="precos-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Preços</span>
+          <h2 id="precos-title">Pague por teste, sem mensalidade.</h2>
+          <p>Mais barato que uma auditoria tradicional e com a vantagem de usuários reais. Valores ilustrativos do projeto, baseados em referências de mercado.</p>
+        </div>
+
+        <div class="plans">
+          <article class="panel plan">
+            <h3>Teste Rápido</h3>
+            <p class="price">R$ 149 <small>por teste</small></p>
+            <ul>
+              <li>1 perfil de deficiência</li>
+              <li>1 testador, até 30 minutos</li>
+              <li>1 fluxo do sistema</li>
+              <li>Relatório em PDF</li>
+            </ul>
+            <a href="#contato" class="btn btn-ghost">Escolher</a>
+          </article>
+
+          <article class="panel plan featured">
+            <span class="badge">Mais escolhido</span>
+            <h3>Teste Completo</h3>
+            <p class="price">R$ 449 <small>por teste</small></p>
+            <ul>
+              <li>2 perfis de deficiência</li>
+              <li>2 testadores, até 3 fluxos</li>
+              <li>Relatório com prioridades</li>
+              <li>1 reteste após as correções</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary">Escolher</a>
+          </article>
+
+          <article class="panel plan">
+            <h3>Empresarial</h3>
+            <p class="price">Sob consulta</p>
+            <ul>
+              <li>Vários sistemas e perfis</li>
+              <li>Testes recorrentes</li>
+              <li>Acordo de confidencialidade (NDA)</li>
+              <li>Suporte dedicado</li>
+            </ul>
+            <a href="#contato" class="btn btn-ghost">Falar com a gente</a>
+          </article>
+        </div>
+
+        <div class="panel tester-pay">
+          <h3>E quanto o testador recebe?</h3>
+          <p>De <strong>R$ 60 a R$ 150 por teste</strong> concluído, conforme a duração e a complexidade do roteiro. O pagamento sai assim que o relatório é validado.</p>
+        </div>
+
+        <details class="sources">
+          <summary>Como chegamos nesses valores</summary>
+          <div class="table-wrap">
+            <table>
+              <caption>Referências de mercado usadas como base (estimativas publicadas por empresas e portais)</caption>
+              <thead>
+                <tr><th scope="col">Serviço</th><th scope="col">Faixa de valor</th><th scope="col">Fonte</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cliente oculto: pagamento ao avaliador</th>
+                  <td>R$ 30 a R$ 250 por avaliação (outras fontes citam até R$ 500 por visita)</td>
+                  <td>
+                    <a href="https://www.diariodepernambuco.com.br/amp/economia/2025/10/11698878-empresa-abre-mais-de-65-vagas-para-cliente-oculto-em-pernambuco.html" target="_blank" rel="noopener">Diario de Pernambuco (2025)</a>,
+                    <a href="https://www.infomoney.com.br/?p=12642" target="_blank" rel="noopener">InfoMoney</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Cliente oculto em restaurante: valor cobrado da empresa</th>
+                  <td>R$ 150 a R$ 450 por visita</td>
+                  <td><a href="https://blog.juriscorrespondente.com.br/cliente-oculto-para-restaurantes-auditoria-operacional/amp/" target="_blank" rel="noopener">Juris Correspondente (2026)</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Auditoria de acessibilidade (WCAG) de site pequeno, 5 a 10 páginas</th>
+                  <td>R$ 1.500 a R$ 3.500 por projeto</td>
+                  <td><a href="https://www.freelasemcrise.com.br/quanto-cobrar/auditoria-acessibilidade-site" target="_blank" rel="noopener">FreelaSemCrise (2026)</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== BENEFÍCIOS ===== -->
+    <section id="beneficios" class="profiles" aria-labelledby="beneficios-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Benefícios</span>
+          <h2 id="beneficios-title">Bom para a empresa. Melhor ainda para quem testa.</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="panel featured">
+            <h3>Para empresas</h3>
+            <ul>
+              <li>Identifique barreiras antes de contratar</li>
+              <li>Relatório objetivo e acionável</li>
+              <li>Adequação à legislação e às cotas</li>
+              <li>Teste com usuários reais, não só ferramentas automáticas</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary">Solicitar teste</a>
+          </div>
+
+          <div class="panel">
+            <h3>Para testadores PCD</h3>
+            <ul>
+              <li>Renda por micro-tarefa, no seu ritmo</li>
+              <li>Trabalho remoto e flexível</li>
+              <li>Use suas próprias tecnologias assistivas</li>
+              <li>Impacto direto em ambientes de trabalho mais inclusivos</li>
+            </ul>
+            <a href="#contato" class="btn btn-ghost">Quero ser testador</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2 id="faq-title">Perguntas comuns</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Preciso liberar acesso ao sistema de produção?</summary>
+            <p>Não. Recomendamos usar um ambiente de homologação (staging), sem dados reais da empresa.</p>
+          </details>
+          <details>
+            <summary>Como os testadores são remunerados?</summary>
+            <p>Cada teste concluído gera um pagamento por micro-tarefa, definido pela duração e complexidade do roteiro.</p>
+          </details>
+          <details>
+            <summary>Os preços são fixos?</summary>
+            <p>Os valores mostrados são de referência. Para vários sistemas, perfis ou testes recorrentes, montamos uma proposta sob medida.</p>
+          </details>
+          <details>
+            <summary>O que vem no relatório?</summary>
+            <p>Um checklist com os itens aprovados e reprovados, observações do testador e os pontos prioritários de correção.</p>
+          </details>
+          <details>
+            <summary>Funciona para sites e aplicativos também?</summary>
+            <p>Sim. Qualquer interface digital acessível por link pode ser testada: sites, sistemas web e aplicações internas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <span class="eyebrow">Comece agora</span>
+            <h2 id="contato-title">Descubra onde seu sistema está excluindo pessoas.</h2>
+            <p>Deixe seus dados e entraremos em contato para configurar o primeiro teste.</p>
+          </div>
+
+          <form id="lead-form" novalidate>
+            <div class="field">
+              <label for="nome">Nome (obrigatório)</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="nome-erro">
+              <span id="nome-erro" class="field-error" hidden></span>
+            </div>
+            <div class="field">
+              <label for="email">E-mail corporativo (obrigatório)</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-erro">
+              <span id="email-erro" class="field-error" hidden></span>
+            </div>
+            <div class="field">
+              <label for="perfil">Perfil de teste desejado</label>
+              <select id="perfil" name="perfil">
+                <option>Visual (leitor de tela)</option>
+                <option>Motora (teclado / voz)</option>
+                <option>Auditiva</option>
+                <option>Cognitiva</option>
+                <option>Todos os perfis</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar solicitação</button>
+            <p id="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>© 2026 AcessoTeste. Projeto acadêmico.</p>
+      <p>Feito com foco em acessibilidade digital.</p>
+    </div>
+  </footer>
+
+  <!-- ===== NARRADOR ===== -->
+  <aside id="narrator" class="narrator" aria-label="Narrador da página">
+    <button type="button" id="narrator-play" class="btn btn-primary">
+      <span class="emoji" aria-hidden="true">🔊</span>
+      <span class="label">Ouvir a página</span>
+    </button>
+    <button type="button" id="narrator-stop" class="btn btn-ghost" disabled>Parar</button>
+    <label for="narrator-rate" class="sr-only">Velocidade da narração</label>
+    <select id="narrator-rate">
+      <option value="0.8">Lenta</option>
+      <option value="1" selected>Normal</option>
+      <option value="1.25">Rápida</option>
+      <option value="1.5">Muito rápida</option>
+    </select>
+    <span id="narrator-status" class="sr-only" role="status" aria-live="polite"></span>
+  </aside>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
